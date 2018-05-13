@@ -1,0 +1,48 @@
+// ==================================
+// Mixins
+// ==================================
+
+
+// Flexbox
+
+@mixin flexbox($disp: null, $flx-dir: null, $flx-wrap: null) {
+  display: $disp;
+  flex-direction: $flx-dir;
+  flex-wrap: $flx-wrap;
+}
+
+
+// Media queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-med) {
+      @content;
+    }
+  }
+    @else if $break == "medium" {
+      @media (min-width: $brkpoint-med + 1) {
+        @content;
+      }
+    }
+  }
+
+// Sizing
+
+@mixin size($width, $height: null) {
+  width: $width;
+  height: $height;
+}
+
+// Progress bars
+
+@mixin progress($width, $position, $top) {
+  width: $width;
+  position: $position;
+  top: $top;
+}
+
+@mixin stroke($array,$offset) {
+  stroke-dasharray: $array;
+  stroke-dashoffset: $offset;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="545px" height="547px" viewBox="0 0 545 547" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M426.717868,506 C410.541374,506 393.765751,503.616582 376.990127,498.253891 L145.726176,423.176221 C88.2097525,404.704731 48.6672116,358.228078 39.081141,299.23848 C29.4950705,240.248882 53.4602468,183.642703 101.989729,148.487286 L214.026928,68.6427796 C282.92681,19.1868541 378.188386,32.8915081 429.713515,100.223069 L548.940268,254.549391 C591.478456,309.963862 593.275844,382.658114 552.535044,439.264293 C522.578574,482.165819 475.84648,506 426.717868,506 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="547" height="469">
+            <rect x="36" y="38" width="547" height="469" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <path d="M378.27661,517 C362.575022,517 346.291894,514.68293 330.008766,509.469522 L105.534215,436.481808 C49.706347,418.524514 11.3246879,373.341643 2.02004331,315.994154 C-7.2846013,258.646665 15.9770102,203.616246 63.0817736,169.43946 L171.829808,91.8176058 C238.706941,43.7383978 331.171847,57.0615518 381.184311,122.518787 L496.910829,272.549087 C538.200189,326.42097 539.94481,397.091614 500.40007,452.122032 C471.323056,493.829297 425.962914,517 378.27661,517 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="531" height="456">
+            <rect x="-1" y="62" width="531" height="456" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+        <path d="M319.568002,388 C309.001338,388 298.043316,386.443378 287.085294,382.940978 L136.021135,333.907382 C98.4507741,321.843561 72.621151,291.48943 66.3594242,252.963033 C60.0976974,214.436636 75.7520144,177.466861 107.452006,154.506686 L180.635939,102.359845 C225.6421,70.0599368 287.86801,79.0105139 321.524792,122.985088 L399.405019,223.776369 C427.191432,259.967833 428.365505,307.444807 401.753166,344.414581 C382.18527,372.433779 351.659352,388 319.568002,388 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="358" height="307">
+            <rect x="64" y="82" width="358" height="307" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+        <path d="M430.568002,423 C420.001338,423 409.043316,421.443378 398.085294,417.940978 L247.021135,368.907382 C209.450774,356.843561 183.621151,326.48943 177.359424,287.963033 C171.097697,249.436636 186.752014,212.466861 218.452006,189.506686 L291.635939,137.359845 C336.6421,105.059937 398.86801,114.010514 432.524792,157.985088 L510.405019,258.776369 C538.191432,294.967833 539.365505,342.444807 512.753166,379.414581 C493.18527,407.433779 462.659352,423 430.568002,423 Z" id="path-7"></path>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="358" height="307">
+            <rect x="175" y="117" width="358" height="307" fill="white"></rect>
+            <use xlink:href="#path-7" fill="black"></use>
+        </mask>
+        <path d="M337.568922,349 C332.315272,349 326.867042,348.219137 321.418812,346.462196 L246.31107,321.865015 C227.631424,315.813327 214.789168,300.586501 211.675894,281.260144 C208.562619,261.933788 216.345805,243.388294 232.106756,231.870567 L268.493149,205.71166 C290.869808,189.508755 321.807971,193.998717 338.541821,216.058093 L377.26317,266.618965 C391.078324,284.774027 391.662063,308.590346 378.430647,327.135839 C368.701665,341.191371 353.524453,349 337.568922,349 Z" id="path-9"></path>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="179" height="155">
+            <rect x="210" y="195" width="179" height="155" fill="white"></rect>
+            <use xlink:href="#path-9" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WebHD" transform="translate(-735.000000, -209.000000)">
+            <g id="Group" transform="translate(736.000000, 210.000000)">
+                <g id="Group-3">
+                    <g id="Group-2" fill-rule="nonzero" opacity="0.700502232" stroke="#FFAFB4" stroke-dasharray="4" stroke-linejoin="round" stroke-width="2">
+                        <use id="Shape-Copy" mask="url(#mask-2)" transform="translate(309.500000, 272.500000) scale(-1, 1) rotate(-90.000000) translate(-309.500000, -272.500000) " xlink:href="#path-1"></use>
+                        <use id="Shape-Copy" mask="url(#mask-4)" transform="translate(264.500000, 290.000000) scale(-1, 1) rotate(-180.000000) translate(-264.500000, -290.000000) " xlink:href="#path-3"></use>
+                        <use id="Shape-Copy" mask="url(#mask-6)" xlink:href="#path-5"></use>
+                        <use id="Shape-Copy" mask="url(#mask-8)" transform="translate(354.000000, 270.500000) rotate(-300.000000) translate(-354.000000, -270.500000) " xlink:href="#path-7"></use>
+                        <use id="Shape-Copy" mask="url(#mask-10)" transform="translate(299.500000, 272.500000) rotate(-192.000000) translate(-299.500000, -272.500000) " xlink:href="#path-9"></use>
+                    </g>
+                    <text id="HTML" font-family="Circular-Book, Circular" font-size="16" font-weight="300" letter-spacing="-0.1542857" fill="#FFAFB4">
+                        <tspan x="271" y="272">HTML</tspan>
+                    </text>
+                    <text id="CSS" font-family="Circular-Book, Circular" font-size="16" font-weight="300" letter-spacing="-0.1542857" fill="#FFAFB4">
+                        <tspan x="281" y="182">CSS</tspan>
+                    </text>
+                    <text id="SASS" font-family="Circular-Book, Circular" font-size="16" font-weight="300" letter-spacing="-0.1542857" fill="#FFAFB4">
+                        <tspan x="423" y="227">SASS</tspan>
+                    </text>
+                    <text id="React" font-family="Circular-Book, Circular" font-size="16" font-weight="300" letter-spacing="-0.1542857" fill="#FFAFB4">
+                        <tspan x="180" y="443">React</tspan>
+                    </text>
+                    <text id="Jquery" font-family="Circular-Book, Circular" font-size="16" font-weight="300" letter-spacing="-0.1542857" fill="#FFAFB4">
+                        <tspan x="207" y="44">Jquery</tspan>
+                    </text>
+                    <text id="JS" font-family="Circular-Book, Circular" font-size="16" font-weight="300" letter-spacing="-0.1542857" fill="#FFAFB4">
+                        <tspan x="43" y="318">JS</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,65 @@
+//==================================
+// Media Queries
+//==================================
+
+@media (max-width: 768px) {
+   #content {
+     .secondary {
+        display: none;
+      }
+     h2 {
+       display: none;
+     }
+     h1, p {
+       text-align: center;
+     }
+   }
+   header {
+     ul {
+       display: none;
+     }
+     #header-mobile {
+       @include flexbox(flex,row,wrap);
+       justify-content: space-between;
+       .icon-li {
+         @include size(34px,34px);
+         border: solid 1px #ffafb4;
+         border-radius: 50%;
+         position: relative;
+         margin-left: 15px;
+         padding: 0;
+       }
+       .icon {
+         position: absolute;
+         padding: 0;
+         margin: 0;
+         right: 8px;
+         top: 8px;
+       }
+       .logo-mobile {
+         margin-right: auto;
+         padding: 0;
+       }
+     }
+   }
+   #shapes {
+     margin: auto;
+   }
+   #footer {
+     display: none;
+   }
+   #footer-mobile {
+     display: block;
+     margin-bottom: 30px;
+     color: #fff;
+     font-size: 1.6rem;
+     text-align: center;
+     line-height: 2.4rem;
+   }
+ }
+
+ @media (max-width: 450px) {
+   #shapes {
+     margin: -50px 0;
+   }
+ }

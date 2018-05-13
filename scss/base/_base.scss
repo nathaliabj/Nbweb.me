@@ -1,0 +1,207 @@
+//==================================
+//General styling
+//==================================
+
+html {
+  font-family: circular;
+  font-size: 62.5%;
+}
+
+body {
+  background: #1d478c; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #1d478c 0%, #002a66 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1d478c 0%,#002a66 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1d478c 0%,#002a66 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d478c', endColorstr='#002a66',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: color .3s ease;
+    &:hover {
+      color: #ffafb4;
+    }
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #50e3c2;
+    margin: 40px 0 0 0;
+  }
+
+
+//==================================
+// background lines styling
+//==================================
+
+.bg-line {
+  @include size(1px,100%);
+  position: fixed;
+  top: 0px;
+  background: rgba(255,255,255,.1);
+  display: block;
+  z-index: 0;
+}
+.bg-line1 {
+  left: 10%;
+}
+.bg-line2 {
+  left: 37.2%;
+}
+.bg-line3 {
+  left: 64.6%;
+}
+.bg-line4 {
+  left: 90%;
+}
+
+//==================================
+//Header styling
+//==================================
+
+header {
+  padding: 25px 0;
+  ul {
+    @include flexbox(flex,row,wrap);
+    justify-content: space-between;
+    .logo {
+      margin-right: auto;
+      padding: 0;
+    }
+    li {
+      padding: 0 30px;
+      font-size: 1.4rem;
+      color: #fff;
+      padding-top: 5px;
+      svg {
+        margin-right: 1.6rem;
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+}
+
+//==================================
+//Content styling
+//==================================
+
+#content {
+  margin-top: 35px;
+  h1 {
+    font-size: 3.2rem;
+    color: #fff;
+    line-height: 4.4rem;
+  }
+  p {
+    font-size: 1.8rem;
+    color: #b4d1ff;
+    line-height: 3rem;
+    font-weight: 400;
+  }
+    .secondary {
+      width: 100%;
+      .skills, .bars {
+        width: 25%;
+        display: inline-block;
+        box-sizing: border-box;
+        li {
+          font-size: 1.6rem;
+          color: #fff;
+          margin-top: 25px;
+        }
+      }
+     .bars {
+       width: 74%;
+
+       li {
+         position: relative;
+        span {
+          display: inline-block;
+          background: #06295b;
+          border-radius: 4px;
+          height: 2px;
+          width: 100%;
+          margin-bottom: 5px;
+        }
+        .bar-color {
+          position: relative;
+          left: 0;
+          max-width: 100%;
+          width: 0;
+          background: #ffafb4;
+          animation: bar .5s ease-in forwards;
+          animation-delay: 2.3s;
+        }
+        .html-progress {
+          @include progress(87%,absolute,0px);
+        }
+        .css-progress {
+          @include progress(70%,absolute,0px);
+        }
+        .js-progress {
+          @include progress(30%,absolute,0px);
+        }
+        .jq-progress {
+          @include progress(37%,absolute,0px);
+        }
+        .react-progress {
+          @include progress(10%,absolute,0px);
+        }
+      }
+    }
+  }
+  #shapes {
+    svg {
+      max-width: 100%;
+    }
+  }
+}
+
+//==================================
+// Footer styling
+//==================================
+
+#footer {
+  margin-bottom: 25px;
+  p {
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 3.2rem;
+    span {
+      color: #b4d1ff;
+    }
+  }
+  svg {
+    margin-right: 1.6rem;
+    position: relative;
+    top: 3px;
+  }
+  li {
+    display: inline-block;
+    margin-top: 1.6rem;
+    width: 40%;
+    a {
+      color: #fff;
+      font-size: 1.6rem;
+      &:hover {
+        color: #ffafb4;
+      }
+    }
+  }
+}
+
+#footer-mobile,
+#header-mobile {
+  display: none;
+}
