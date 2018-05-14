@@ -5,14 +5,12 @@
 html {
   font-family: circular;
   font-size: 62.5%;
-}
-
-body {
   background: #1d478c; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #1d478c 0%, #002a66 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #1d478c 0%,#002a66 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #1d478c 0%,#002a66 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d478c', endColorstr='#002a66',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background: -moz-linear-gradient(45deg, #1d478c 0%, #002a66 100%) fixed; /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #1d478c 0%,#002a66 100%) fixed; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1d478c 0%,#002a66 100%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d478c', endColorstr='#002a66',GradientType=1 ) fixed; /* IE6-9 fallback on horizontal gradient */
 }
 
 ul{

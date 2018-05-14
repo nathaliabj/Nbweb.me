@@ -42,6 +42,8 @@
   top: $top;
 }
 
+// stroke arrays
+
 @mixin stroke($array,$offset) {
   stroke-dasharray: $array;
   stroke-dashoffset: $offset;

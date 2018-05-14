@@ -130,7 +130,7 @@ header {
   @extend %fade-in;
   animation-delay: 1.8s;
 }
-
+//
 .shape {
   animation: offset 2s linear forwards, dashed .0001s linear forwards, runner 20s infinite linear forwards;
 }
