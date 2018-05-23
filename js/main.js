@@ -14,6 +14,4 @@ tl.to("header", .5, {opacity:1, top:0}, "+=1")
   {
     var element = document.getElementById("body");
   element.classList.add("safari");
-  }else{
-  
   }
