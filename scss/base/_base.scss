@@ -49,6 +49,7 @@ ul{
   background: rgba(255,255,255,.1);
   display: block;
   z-index: 0;
+  height: 0;
 }
 .bg-line1 {
   left: 10%;
@@ -69,6 +70,7 @@ ul{
 
 header {
   padding: 25px 0;
+  @extend %animation;
   ul {
     @include flexbox(flex,row,wrap);
     justify-content: space-between;
@@ -93,9 +95,11 @@ header {
 //==================================
 //Content styling
 //==================================
-
 #content {
   margin-top: 35px;
+  h1, p, h2, .secondary {
+    @extend %animation;
+  }
   h1 {
     font-size: 3.2rem;
     color: #fff;
@@ -134,12 +138,7 @@ header {
         }
         .bar-color {
           position: relative;
-          left: 0;
-          max-width: 100%;
           width: 0;
-          background: #ffafb4;
-          animation: bar .5s ease-in forwards;
-          animation-delay: 2.3s;
         }
         .html-progress {
           @include progress(87%,absolute,0px);
@@ -160,9 +159,21 @@ header {
     }
   }
   #shapes {
+    @extend %animation;
     svg {
       max-width: 100%;
+      @include size(545px, 547px);
     }
+  }
+}
+
+.safari {
+  .shape {
+    animation: none;
+    stroke-dasharray: 3;
+  }
+  .shape-1, .shape-2, .shape-3, .shape-4, .shape-5 {
+    animation-delay: none;
   }
 }
 
@@ -171,6 +182,8 @@ header {
 //==================================
 
 #footer {
+  @extend %animation;
+  z-index: 5;
   margin-bottom: 25px;
   p {
     font-size: 1.6rem;

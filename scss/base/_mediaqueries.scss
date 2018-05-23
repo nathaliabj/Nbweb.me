@@ -60,6 +60,15 @@
 
  @media (max-width: 450px) {
    #shapes {
-     margin: -50px 0;
+     height: 420px;
+     overflow: hidden;
+     svg {
+       position: relative;
+       top: -65px;
+     }
+
+   }
+   .shape {
+     animation: none;
    }
  }

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Nathalia Buitrago &amp; Front-end developer, London, United Kingdom">
     <meta name="keywords" content="HTML, CSS, Jquery, JavaScript, React, Modern, United Kingdom, London, Europe">
-    <link rel="shortcut icon" href="http://nbweb.me/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="http://nbweb.me/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Nathalia Buitrago </title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body id="body">
     <div class="bg-line bg-line1">
     </div>
     <div class="bg-line bg-line2">
@@ -22,7 +22,7 @@
 
     <div class="container">
 
-     <header>
+     <header class="fade-in">
        <ul>
          <li class="logo">
            <svg width="159px" height="28px" viewBox="0 0 159 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -117,10 +117,10 @@
 
      <div id="content" class="grid__row">
        <div class="grid__col--5">
-         <h1>Hey, I'm Nathalia and I &lt;3 to code! &#9996; </h1>
-         <p>I’m currently looking for a company where I could grow and continue developing my skills as a front-end dev. I’m ultra motivated and a quick learner, I’d love to be part of a dev team and change the world :D</p>
-         <h2>Skills</h2>
-          <div class="secondary">
+         <h1 class="fade-in">Hey, I'm Nathalia and I &lt;3 to code! &#9996; </h1>
+         <p class="fade-in">I’m currently looking for a company where I could grow and continue developing my skills as a front-end dev. I’m ultra motivated and a quick learner, I’d love to be part of a dev team and change the world :D</p>
+         <h2 class="fade-in">Skills</h2>
+          <div class="fade-in secondary">
                <ul class="skills">
                  <li>HTML </li>
                  <li>CSS/SASS</li>
@@ -157,8 +157,8 @@
 
          </div>
        </div>
-       <div id="shapes" class="grid__col--6">
-         <svg width="545px" height="547px" viewBox="0 0 545 547" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <div id="shapes" class="fade-in grid__col--6">
+         <svg viewBox="0 0 545 547" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
              <defs>
                  <path class="shape shape-1" d="M426.717868,506 C410.541374,506 393.765751,503.616582 376.990127,498.253891 L145.726176,423.176221 C88.2097525,404.704731 48.6672116,358.228078 39.081141,299.23848 C29.4950705,240.248882 53.4602468,183.642703 101.989729,148.487286 L214.026928,68.6427796 C282.92681,19.1868541 378.188386,32.8915081 429.713515,100.223069 L548.940268,254.549391 C591.478456,309.963862 593.275844,382.658114 552.535044,439.264293 C522.578574,482.165819 475.84648,506 426.717868,506 Z" id="path-1"></path>
                  <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="547" height="469">
@@ -223,7 +223,7 @@
        </div>
      </div>
 
-     <div id="footer" class="grid__row">
+     <div id="footer" class="fade-in grid__row">
        <div class="grid__col--4">
         <h2>Speaking</h2>
         <p>English = { <span>Fluent</span> }<br>
@@ -275,11 +275,13 @@
        </div>
      </div>
      <div id="footer-mobile">
-       <p><a href="mailto:nathalia.buitragoj@gmail.com">nathalia.buitragoj@gmail.com</a><br>
+       <p><a href="mailto:nathalia.buitragoj@gmail.com" class="mail-mobile">nathalia.buitragoj@gmail.com</a><br>
          <a href="tel:+447473965418">07473 965418</a>, London UK</p>
      </div>
 
    </div>
-
+   <script src="js/TweenMax.min.js"></script>
+   <script src="js/TimelineLite.min.js"></script>
+   <script src="js/main.js"></script>
   </body>
 </html>

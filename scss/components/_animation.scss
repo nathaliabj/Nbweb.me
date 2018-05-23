@@ -1,21 +1,6 @@
 // ======================
 // Keyframes
 // ======================
-
-@keyframes opacity {
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
-
-@keyframes bar {
-
-  100% {
-    width: 100%;
-  }
-}
-
 @keyframes offset {
   0% {
     opacity: 0;
@@ -38,119 +23,36 @@
   }
 }
 
-@keyframes lines {
-  100% {
-    height: 100%;
-  }
-}
-
-// ==========================
-// Extends
-// ==========================
-
-%lines {
-  height: 0;
-  animation: lines .8s ease forwards;
-}
-
-%fade-in {
-  opacity: 0;
-  position: relative;
-  top: 15px;
-  animation: opacity .7s ease forwards;
-}
-
-// ==========================
-// Background lines animation
-// ==========================
-
-.bg-line1 {
-  @extend %lines;
-  animation-delay: 0;
-}
-
-.bg-line2 {
-  @extend %lines;
-  animation-delay: .3s;
-}
-.bg-line3 {
-  @extend %lines;
-  animation-delay: .6s;
-}
-.bg-line4 {
-  @extend %lines;
-  animation-delay: .9s;
-}
-
-// ======================
-// Header animation
-// ======================
-
-header {
-  opacity: 0;
-  position: relative;
-  top: 15px;
-  animation: opacity .5s ease forwards;
-  animation-delay: 1s;
-}
-
-// ======================
-// Content animation
-// ======================
-
-#content {
-  h1 {
-    @extend %fade-in;
-    animation-delay: 1.1s;
-  }
-  p {
-    @extend %fade-in;
-    animation-delay: 1.2s;
-  }
-  h2 {
-    @extend %fade-in;
-    animation-delay: 1.3s;
-  }
-  .secondary {
-    @extend %fade-in;
-    animation-delay: 1.4s;
-  }
-}
-
-#footer {
-  @extend %fade-in;
-  animation-delay: 1.5s;
-}
-
 // ======================
 // Shape animation
 // ======================
 
 #shapes {
-  @extend %fade-in;
-  animation-delay: 1.8s;
+  opacity: 0;
+  position: relative;
+  top: 15px;
 }
-//
-.shape {
-  animation: offset 2s linear forwards, dashed .0001s linear forwards, runner 20s infinite linear forwards;
-}
-.shape-1 {
-  @include stroke(1700,1700);
-  animation-delay: 2.3s, 4s, 4s;
-}
-.shape-2 {
-  @include stroke(1600,1600);
-  animation-delay: 2.3s, 4s, 4s;
-}
-.shape-3 {
-  @include stroke(1080,1080);
-  animation-delay: 2.3s, 4s, 4s;
-}
-.shape-4 {
-  @include stroke(1200,1200);
-  animation-delay: 2.3s, 4s, 4s;
-}
-.shape-5 {
-  @include stroke(800,800);
-  animation-delay: 2.3s, 4s, 4s;
-}
+
+  .shape {
+    animation: offset 2s linear forwards, dashed .01s linear forwards, runner 8s linear infinite forwards;
+  }
+  .shape-1 {
+   @include stroke(1700,1700);
+   animation-delay: 2.3s, 4s, 4s;
+  }
+  .shape-2 {
+    @include stroke(1600,1600);
+    animation-delay: 2.3s, 4s, 4s;
+  }
+  .shape-3 {
+    @include stroke(1080,1080);
+    animation-delay: 2.3s, 4s, 4s;
+  }
+  .shape-4 {
+    @include stroke(1200,1200);
+    animation-delay: 2.3s, 4s, 4s;
+  }
+  .shape-5 {
+    @include stroke(800,800);
+    animation-delay: 2.3s, 4s, 4s;
+  }
