@@ -35,6 +35,9 @@
          margin: 0;
          right: 8px;
          top: 8px;
+         path {
+          fill: #fff;
+         }
        }
        .logo-mobile {
          margin-right: auto;
@@ -42,6 +45,35 @@
        }
      }
    }
+
+   #portfolio {
+      .portfolio {
+        width: 100%;
+        li, img, .description {
+          width: 380px;
+          height: auto;
+          margin: 25px auto;
+        }
+        li {
+          background-color: #fff;
+          position: relative;
+        .description {
+           opacity: 1;
+           position: relative;
+           background-color: #fff;
+           h3 {
+             padding: 20px 0;
+           }
+           p{
+             color: #1d478c;
+             padding-bottom: 20px;
+             text-align: center;
+           }
+         }
+       }
+      }
+    }
+
    #shapes {
      margin: auto;
    }
@@ -58,7 +90,7 @@
    }
  }
 
- @media (max-width: 450px) {
+ @media (max-width: 320px) {
    #shapes {
      height: 420px;
      overflow: hidden;
@@ -66,9 +98,21 @@
        position: relative;
        top: -65px;
      }
-
    }
+
+   #portfolio {
+      .portfolio {
+        width: 100%;
+        li, img, .description {
+          width: 350px;
+          height: auto;
+          margin: 25px auto;
+        }
+      }
+    }
+
    .shape {
      animation: none;
    }
+
  }

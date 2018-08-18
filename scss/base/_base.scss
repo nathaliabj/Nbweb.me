@@ -10,7 +10,6 @@ html {
   background: -moz-linear-gradient(45deg, #1d478c 0%, #002a66 100%) fixed; /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, #1d478c 0%,#002a66 100%) fixed; /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #1d478c 0%,#002a66 100%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d478c', endColorstr='#002a66',GradientType=1 ) fixed; /* IE6-9 fallback on horizontal gradient */
 }
 
 ul{
@@ -43,7 +42,7 @@ ul{
 //==================================
 
 .bg-line {
-  @include size(1px,100%);
+  @include size(1px);
   position: fixed;
   top: 0px;
   background: rgba(255,255,255,.1);
@@ -147,10 +146,10 @@ header {
           @include progress(70%,absolute,0px);
         }
         .js-progress {
-          @include progress(30%,absolute,0px);
+          @include progress(60%,absolute,0px);
         }
         .jq-progress {
-          @include progress(37%,absolute,0px);
+          @include progress(45%,absolute,0px);
         }
         .react-progress {
           @include progress(10%,absolute,0px);
@@ -167,13 +166,79 @@ header {
   }
 }
 
+#portfolio {
+    background-color: #f8f8f8;
+  .portfolio {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 150px;
+    padding-bottom: 50px;
+
+    li, img, .description {
+      width: 380px;
+      height: 200px;
+    }
+
+    li {
+      margin-top: 50px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 5px;
+      position: relative;
+
+      img {
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .description {
+        opacity: 0;
+        position: absolute;
+        border-radius: 5px;
+        top: 0;
+        background-color: rgba(56, 56, 56, .9);
+        transition: all .3s ease;
+        .go-to {
+          position: absolute;
+          bottom: 20px;
+          left: 200px;
+          color: #50e3c2;
+          padding: 10px;
+        }
+        h3 {
+          font-size: 16px;
+          color: #FFB4AF;
+          text-align: center;
+          padding: 20px 0;
+        }
+        p {
+          font-size: 14px;
+          line-height: 1.5;
+          color: #fff;
+          justify-content: center;
+        }
+        h3, p {
+          width: 90%;
+          margin: auto;
+        }
+      }
+    }
+    li:hover .description {
+      opacity: 1;
+    }
+  }
+}
+
 .safari {
   .shape {
     animation: none;
-    stroke-dasharray: 3;
+    stroke-dasharray: 3px;
   }
   .shape-1, .shape-2, .shape-3, .shape-4, .shape-5 {
-    animation-delay: none;
+    animation-delay: 0s;
   }
 }
 
@@ -184,11 +249,22 @@ header {
 #footer {
   @extend %animation;
   z-index: 5;
-  margin-bottom: 25px;
+  background: #0e2347;
+  height: 130px;
+  width: 100%;
+  padding-bottom: 40px;
+  margin: auto;
+  .footer {
+    width: 80%;
+    margin: auto;
+  }
+  h2 {
+    font-size: 18px;
+  }
   p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #fff;
-    line-height: 3.2rem;
+    line-height: 2.2rem;
     span {
       color: #b4d1ff;
     }
@@ -207,6 +283,11 @@ header {
       font-size: 1.6rem;
       &:hover {
         color: #ffafb4;
+      }
+    }
+    .social-media {
+      path {
+        fill: #fff;
       }
     }
   }

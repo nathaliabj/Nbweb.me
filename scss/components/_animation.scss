@@ -13,13 +13,13 @@
 
 @keyframes dashed {
   100% {
-    stroke-dasharray: 5;
+    stroke-dasharray: 5px;
   }
 }
 
 @keyframes runner {
   100% {
-    stroke-dashoffset: 1050;
+    stroke-dashoffset: 1050px;
   }
 }
 
@@ -37,22 +37,22 @@
     animation: offset 2s linear forwards, dashed .01s linear forwards, runner 8s linear infinite forwards;
   }
   .shape-1 {
-   @include stroke(1700,1700);
+   @include stroke(1700px,1700px);
    animation-delay: 2.3s, 4s, 4s;
   }
   .shape-2 {
-    @include stroke(1600,1600);
+    @include stroke(1600px,1600px);
     animation-delay: 2.3s, 4s, 4s;
   }
   .shape-3 {
-    @include stroke(1080,1080);
+    @include stroke(1080px,1080px);
     animation-delay: 2.3s, 4s, 4s;
   }
   .shape-4 {
-    @include stroke(1200,1200);
+    @include stroke(1200px,1200px);
     animation-delay: 2.3s, 4s, 4s;
   }
   .shape-5 {
-    @include stroke(800,800);
+    @include stroke(800px,800px);
     animation-delay: 2.3s, 4s, 4s;
   }
